@@ -1,0 +1,33 @@
+fine-tuning for our purposes
+
+would mostly be to enhance the model's personality (it is already pretty good with corrections and such)
+need a large data-set, across a lot of domains
+
+data collection:
+some examples:
+  https://languages.oup.com/products/lexical-datasets-for-nlp/
+  https://arxiv.org/abs/2402.04588
+  https://opendatascience.com/10-datasets-for-fine-tuning-large-language-models-llm/
+
+data preprocessing:
+clean data, annotate the type of language task (like grammar correction, vocab building)
+
+fine-tunning process:
+use hugging face's transformers, set up a training loop
+can also fine-tune directly through openai for 4o, 4o-mini
+
+evaluate:
+based on accuracy in grammar correction, fluency, etc.
+refine data set, adjust training parameters or whatever
+
+considerations:
+  - need a lot of good high quality data
+  - computational power, time
+  - time needed to regulate and test the model
+
+benefits:
+  - improved accuracy
+  - more versatile
+  - domain expertise,better at different languages.
+  - better for latency, which is what we need.
+
